@@ -1,3 +1,27 @@
+
+/*Navbar*/
+.icon-list ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.icon-list li{
+	display: inline;
+    float: center;
+}
+
+.icon-list li a {
+    color: white;
+    padding: 16px;
+	transition-duration: 2s;
+}
+
+.icon-list li a :hover{
+	transform: rotate(45deg);
+}
+
 /*Carousel css*/
 .myCarousel {
     width: 60%;
@@ -48,6 +72,103 @@
 	
 }
 
+/*Accordion Projects*/
+.projects-cont button.accordion {
+    background-color: #5bc0de;
+    color: #fff;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.projects-cont button.accordion.active, button.accordion:hover {
+    background-color: #d8fffd;
+	color: #444;
+}
+
+.projects-cont button.accordion:after {
+    content: '\02C5';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.projects-cont button.accordion.active:after {
+    content: "\02C4";
+}
+
+.projects-cont div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+/*Carousel Projects*/
+.myCarouselProj4th {
+    width: 60%;
+    height: 100%;
+    float:left;
+    margin-right: 45px;
+    margin-bottom:2.5%;
+}
+
+.myCarouselProj3rd {
+    width: 60%;
+    height: 100%;
+    float:left;
+    margin-right: 45px;
+    margin-bottom:2.5%;
+}
+
+.myCarouselProj2nd {
+    width: 60%;
+    height: 100%;
+    float:left;
+    margin-right: 45px;
+    margin-bottom:2.5%;
+}
+
+.myCarouselTab {
+    width: 60%;
+    height: 100%;
+    float:left;
+    margin-right: 45px;
+    margin-bottom:2.5%;
+}
+
+.myCarouselPixel {
+    width: 60%;
+    height: 100%;
+    float:left;
+    margin-right: 45px;
+    margin-bottom:2.5%;
+}
+
+.myCarouselExtraGame {
+    width: 60%;
+    height: 100%;
+    float:left;
+    margin-right: 45px;
+    margin-bottom:2.5%;
+}
+
+.carousel-inner {
+    position: relative;
+    padding-bottom: 50%;
+    padding-top: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+/*Work Experience Panels*/
 .transdevwork {
 	width: 325px;
     height: 100px;
@@ -77,27 +198,5 @@
 
 .hmvwork:hover{
 	width: 750px;
-}
-
-
-.contact-list ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-.contact-list li{
-    float: left;
-}
-
-.contact-list li a {
-    color: white;
-    padding: 16px;
-	transition-duration: 2s;
-}
-
-.contact-list li a :hover{
-	transform: rotate(45deg);
 }
 
