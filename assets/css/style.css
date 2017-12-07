@@ -22,10 +22,10 @@
 	transform: rotate(45deg);
 }
 
-/*Carousel css*/
+/*Carousel education css*/
 .myCarousel {
     width: 60%;
-    height: 250%;
+    height: auto;
     float: right;
     margin-top: 20px;
     margin-right: 45px;
@@ -73,8 +73,8 @@
 }
 
 /*Accordion Projects*/
-.projects-cont button.accordion {
-    background-color: #5bc0de;
+.panel-title{
+	background-color: #5bc0de;
     color: #fff;
     cursor: pointer;
     padding: 18px;
@@ -86,12 +86,11 @@
     transition: 0.4s;
 }
 
-.projects-cont button.accordion.active, button.accordion:hover {
-    background-color: #d8fffd;
-	color: #444;
+.panel-default>.panel-heading {
+	padding: 0px;
 }
 
-.projects-cont button.accordion:after {
+.panel-title:after {
     content: '\02C5';
     color: #777;
     font-weight: bold;
@@ -99,16 +98,13 @@
     margin-left: 5px;
 }
 
-.projects-cont button.accordion.active:after {
-    content: "\02C4";
+.panel-title:hover {
+    background-color: #d8fffd;
+	color: #444;
 }
 
-.projects-cont div.panel {
-    padding: 0 18px;
-    background-color: white;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
+.panel-title.active:after {
+    content: "\02C4";
 }
 
 /*Carousel Projects*/
@@ -198,5 +194,17 @@
 
 .hmvwork:hover{
 	width: 750px;
+}
+
+#googleMap iframe{
+	width: 600px;
+	height: 400px;
+}
+
+@media screen and (max-width: 800px){
+	#googleMap iframe{
+	width: auto;
+	height: auto;
+}
 }
 
